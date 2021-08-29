@@ -2,10 +2,12 @@
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
     header('Content-type: application/json');
-    $api_token = "permissao";
+    
    
+    $api_token = $_POST["api_token"];
+    
 
-    if($api_token == 'permissao'){        
+    if($api_token == 'fabricadedesenvolvedor'){        
 
         require_once('dbConnect.php');
 
